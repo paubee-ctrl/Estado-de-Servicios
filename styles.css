@@ -1,0 +1,68 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: system-ui, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: #f4f4f5;
+  color: #27272a;
+}
+
+main { width: 420px; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+h1 { font-size: 1.15rem; font-weight: 600; margin: 0; }
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border: 1px solid #d4d4d8;
+  border-radius: 0.5rem;
+  background: white;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) { background: #e4e4e7; }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.servicios { list-style: none; padding: 0; margin: 0; }
+
+.servicio {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  margin-bottom: 0.4rem;
+  background: white;
+  border-radius: 0.6rem;
+  border-left: 4px solid #d4d4d8;
+  transition: border-color 0.2s;
+}
+
+.servicio.comprobando { border-left-color: #60a5fa; }
+.servicio.operativo   { border-left-color: #22c55e; }
+.servicio.caido       { border-left-color: #ef4444; }
+
+.nombre { flex: 1; font-size: 0.95rem; }
+
+.detalle {
+  font-size: 0.8rem;
+  color: #a1a1aa;
+  font-variant-numeric: tabular-nums;
+}
+
+#resumen {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #71717a;
+}

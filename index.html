@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estado del sistema</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Estado del sistema</h1>
+      <button id="btn-comprobar">Comprobar todo</button>
+    </header>
+
+    <ul class="servicios">
+      <li class="servicio comprobando" id="srv-db">
+        <span class="icono">🕐</span>
+        <span class="nombre">Base de datos</span>
+        <span class="detalle"></span>
+      </li>
+      <li class="servicio comprobando" id="srv-pagos">
+        <span class="icono">🕐</span>
+        <span class="nombre">Servicio de pagos</span>
+        <span class="detalle"></span>
+      </li>
+      <li class="servicio comprobando" id="srv-auth">
+        <span class="icono">🕐</span>
+        <span class="nombre">Autenticación</span>
+        <span class="detalle"></span>
+      </li>
+      <li class="servicio comprobando" id="srv-mail">
+        <span class="icono">🕐</span>
+        <span class="nombre">Envío de correo</span>
+        <span class="detalle"></span>
+      </li>
+    </ul>
+
+    <p id="resumen">Sin comprobar</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
